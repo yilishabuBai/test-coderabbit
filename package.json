@@ -1,0 +1,15 @@
+{
+  "name": "test-coderabbit",
+  "version": "1.0.0",
+  "description": "CodeRabbit capability boundary testing project",
+  "private": true,
+  "scripts": {
+    "lint": "biome check src/",
+    "lint:fix": "biome check --write src/",
+    "format": "biome format --write src/"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.0"
+  },
+  "license": "MIT"
+}

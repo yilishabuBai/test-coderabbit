@@ -31,7 +31,7 @@ TIMEOUT=30
 
 # Issue 7: Using echo with user-controlled input (potential injection)
 echo "Deploying version: $1"
-eval "echo $1"
+printf '%s\n' "$1"
 
 # Issue 8: Not using set -e or set -u
 for file in $DEPLOY_DIR/*.js

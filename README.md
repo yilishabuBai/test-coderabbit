@@ -8,7 +8,7 @@ This repository contains intentionally flawed code across multiple dimensions to
 
 ## Project Structure
 
-```
+```text
 test-coderabbit/
 ├── .coderabbit.yaml              # CodeRabbit configuration (assertive mode, all tools enabled)
 ├── .gitignore

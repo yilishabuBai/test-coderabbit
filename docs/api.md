@@ -1,8 +1,8 @@
 # API Documentation
 
-##Endpoints
+## Endpoints
 
-The following endpoints are available.Note the base URL is `http://localhost:3000`.
+The following endpoints are available. Note the base URL is `http://localhost:3000`.
 
 ### Get Users
 Gets all users from the database
@@ -21,7 +21,7 @@ Gets all users from the database
 }
 ```
 
-###Get User by ID
+### Get User by ID
 
 **URL**: `/api/users/:id`
 
@@ -32,7 +32,7 @@ Gets all users from the database
 |id|integer|The user ID|
 
 **Response**:
-```
+```json
 {
   "id": 1,
   "name": "Alice",
@@ -63,11 +63,11 @@ Gets all users from the database
 }
 ```
 
-##Error Handling
+## Error Handling
 
 All errors follow this format:
 
-```
+```json
 {
   "error": {
     "code": 404,
@@ -84,24 +84,24 @@ Error codes:
 - 404 - Not found
 - 500 - Internal Server Error
 
-##Authentication
+## Authentication
 
-Authentication is done via JWT tokens.  To get a token:
+Authentication is done via JWT tokens. To get a token:
 
 1. POST to `/api/auth/login` with credentials
 2. Include the token in the `Authorization` header
 3. Tokens expire after 24 hours
 
-For more details see [Authentication Guide](./auth-guide.md).
+For more details see the [CodeRabbit Config Guide](./coderabbit-config.md).
 
-Also check the [Deployment Guide](https://example.com/deploy) and the [API Reference](./api-reference.md) for more information.
+Deployment and extended API reference documentation are coming soon.
 
-##Rate Limiting
-The API is rate limited to 100 requests per minute.Exceeding this will result in a 429 response.
+## Rate Limiting
+The API is rate limited to 100 requests per minute. Exceeding this will result in a 429 response.
 
 ### Websocket Support
 
-The API also supports websockets for real-time updates.Connect to `ws://localhost:3000/ws` to receive events.
+The API also supports websockets for real-time updates. Connect to `ws://localhost:3000/ws` to receive events.
 
 #### Events:
 
@@ -111,7 +111,7 @@ The API also supports websockets for real-time updates.Connect to `ws://localhos
 
 ---
 
-##Changelog
+## Changelog
 
 * v1.0.0 - Initial release
 * v1.1.0 - Added websocket support

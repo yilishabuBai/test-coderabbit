@@ -87,8 +87,8 @@ reviews:
 
   auto_review:
     enabled: true
-    incremental: true
-    auto_incremental_review_pause_after: 10
+    auto_incremental_review: true
+    auto_pause_after_reviewed_commits: 10
     drafts: true
     base_branches: ["main", "master"]
 
@@ -151,7 +151,7 @@ reviews:
     opengrep:
       enabled: true
     ast-grep:
-      essentials: true
+      essential_rules: true
     github-checks:
       enabled: true
       timeout_ms: 120000
